@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css" integrity="sha384-0UBL8wxZ28kqJ8w8N8RUV0odBG5w8D/Y+rb+o7hr2F3dS9twlAE8S7VUtVSRe5cc" crossorigin="anonymous">
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src='js/productListController.js'></script>
+        <script src='js/productDetailsController.js'></script>
+        <script src='js/productServices.js'></script>
+        <script src='js/main.js'></script>
+        <script>
+            var pageManager = new Manager();
+            $(function(){                
+                pageManager.Start();
+                            
+            });
+        </script>        
+    </head>
+    <body>
+        <!--<button onclick="pageManager.Navigate('#products')">test Navigate</button>
+        <button onclick="pageManager.Navigate('#categories')">test Navigate</button>
+        <button onclick="pageManager.Navigate('#details')">test Navigate</button>-->
+        <div id="categoriesList" class="col-md-3"></div>
+        <div id="productsList" class="col-md-9"></div>
+        <div id="productDetails"></div>
+    </body>
+</html>
